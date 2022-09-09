@@ -86,7 +86,7 @@ const Videos = () => {
                 controls
                 autoPlay
                 muted
-                className="rounded-[30px] border-2 border-gray w-100 h-[80vh] shadow-xl "
+                className="rounded-[30px] border-2 border-gray w-100 h-[40vh] xl:h-[80vh] lg:h-[80vh] md:h-[60vh]  shadow-xl "
               >
                 <source
                   src={item.v1}
