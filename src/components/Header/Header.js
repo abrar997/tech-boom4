@@ -42,7 +42,7 @@ const Header = () => {
                 initial={{ y: -50, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 exit={{ y: -40, opacity: 0 }}
-                transition={{ duration: 0.3, type: "spring" }}
+                transition={{ duration: 0.2, type: "tween" }}
               >
                 <div>{value}</div>
               </motion.div>
@@ -51,10 +51,8 @@ const Header = () => {
         </AnimatePresence>
       </motion.div>
       <motion.div
-        className=" text-[12px] mt-5
-       flex justify-between items-start  uppercase text-left "
-      >
-        <p className="flex-start ">
+        className=" text-[12px] mt-5 flex justify-between items-start tracking-wide  uppercase text-left">
+        <p>
           our work <br /> centers on resluts
         </p>
         <p>

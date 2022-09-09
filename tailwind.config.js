@@ -6,15 +6,21 @@ module.exports = {
       color: {
         gray: "gray",
       },
-      fontFamily: { head: "'Alfa Slab One', cursive" },
-
       backgroundColor: {
         primary: "#eee",
+        hover: "red",
+        brown:"rgb(31, 3, 3)"
       },
       height: {
-        100: "100vh",
-        60: "500px",
+        100: "70vh",
+        60: "60vh",
+
       },
+      width: {
+        100:"100%",
+        // 80:"%"
+      },
+
       fontSize: {
         title: "5rem",
       },
@@ -26,6 +32,7 @@ module.exports = {
         xl: "1280px",
         "2xl": "1536px",
       },
+      fontFamily: { head: "'Alfa Slab One', cursive" },
     },
   },
   plugins: [],

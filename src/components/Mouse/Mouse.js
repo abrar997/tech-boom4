@@ -1,63 +1,7 @@
-// import { useEffect } from "react";
-// import {
-//   motion,
-//   MotionValue,
-//   useMotionValue,
-//   useSpring,
-//   useTransform,
-//   transform,
-// } from "framer-motion";
-
-// // function useTransformSpring() {
-// //   const transformValue = useTransform(MotionValue, [0, 1],[1,2])
-// //   const springValue = useSpring(transformValue, { damping: 10 })
-// //   return springValue
-// // }
-
-// const Mouse = () => {
-//   //   const screenX = useMotionValue(0)
-//   //   const screenY = useMotionValue(0)
-//   //   const x = useTransformSpring(screenX, [-200, 200])
-//   //   const y = useTransformSpring(screenY, [-100, 100])
-
-//   //   useEffect(() => {
-//   //     function handleMouseMove() {
-//   //       const width = transform([0, window.innerWidth], [0, 1])(MouseEvent.clientX)
-//   //       const height = transform([0, window.innerHeight], [0, 1])(MouseEvent.clientY)
-//   //       screenX.set(width)
-//   //       screenY.set(height)
-//   //     }
-//   //     document.addEventListener('mousemove', handleMouseMove)
-//   //     return () => {
-//   //       document.removeEventListener('mousemove', handleMouseMove)
-//   //     }
-//   //   }, [])
-
-//   return (
-//     <motion.div
-//     initial={{opacity:0}}
-//     // animate={{visibility:"visible"}}
-//     whileHover={{scale:[1,2],opacity:1}}
-//     transition={{ type: "spring", stiffness: 400, damping: 10 }}
-
-//       style={{
-//         width: 100,
-//         height: 100,
-//         backgroundColor: "pink",
-//         borderRadius: "100%",
-//         // x,
-//         // y,
-//       }}
-//     />
-//   );
-// };
-
-// export default Mouse;
-
 import React, { useState, useRef } from "react";
 import { motion } from "framer-motion";
 
-const Mouse =()=> {
+export default function Mouse() {
   return (
     <div
       className="App"
@@ -126,34 +70,19 @@ function getRelativeCoordinates(event, referenceElement) {
 const Box = () => {
   const [mousePosition, setMousePosition] = useState({});
   const boxRef = useRef();
-  const handleMouseMove = e => {
+  const handleMouseMove = (e) => {
     setMousePosition(getRelativeCoordinates(e, boxRef.current));
   };
   return (
     <motion.div
       ref={boxRef}
       style={{ ...css.box, perspective: 600 }}
-      onMouseMove={e => handleMouseMove(e)}
+      onMouseMove={(e) => handleMouseMove(e)}
       animate={{
         rotateX: mousePosition.centerX * 20,
         rotateY: mousePosition.centerY * 20
       }}
     >
-      <motion.div
-        style={css.fly}
-        animate={{
-          x: mousePosition.x,
-          y: mousePosition.y
-        }}
-      />
-      <motion.div
-        style={{ ...css.fly, backgroundColor: "gold" }}
-        animate={{
-          x: mousePosition.x,
-          y: mousePosition.y
-        }}
-        transition={{ type: "spring" }}
-      />
       <motion.div
         style={{ ...css.fly, backgroundColor: "orange" }}
         animate={{
@@ -162,14 +91,6 @@ const Box = () => {
         }}
         transition={{ type: "tween" }}
       />
-      {mousePosition.x} / {mousePosition.y}
-      <br />
-      {mousePosition.centerX} / {mousePosition.centerY}
-      <br />
-      {mousePosition.width} / {mousePosition.height}
-      <br />
     </motion.div>
   );
 };
-
-export default Mouse;
