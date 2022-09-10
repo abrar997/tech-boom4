@@ -38,7 +38,7 @@ const Header = () => {
           }}
           className=" uppercase text-center flex flex-col justify-center items-center"
         >
-          <motion.p className="  tracking-widest ">
+          <motion.p className=" tracking-widest ">
             poerful websites and brand experience
           </motion.p>
           <AnimatePresence exitBeforeEnter>

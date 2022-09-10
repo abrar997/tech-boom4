@@ -40,7 +40,11 @@ const Card = () => {
     >
       {data.map((item, index) => {
         return (
-          <div key={index} className="mb-5 border-l-[1px] border-[gray] p-5 pl-7 ">
+          <div
+            key={index}
+            className="mb-5 border-l-[1px]
+           border-[gray] p-5 pl-7 "
+          >
             <p className="w-[70%] text-sm xl:text-sm mb-6 lg:text-lg md:text-md text-[grey] ">
               {item.link}
             </p>

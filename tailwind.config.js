@@ -34,7 +34,7 @@ module.exports = {
         xl: "1280px",
         "2xl": "1536px",
       },
-      fontFamily: { head: "'Alfa Slab One', cursive" },
+      fontFamily: { head: " 'Anton', sans-serif" },
     },
   },
   plugins: [],
