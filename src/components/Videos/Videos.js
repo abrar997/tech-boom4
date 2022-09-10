@@ -1,7 +1,9 @@
 import React, { useState, useRef } from "react";
 import { data } from "../../constatns";
-import { motion } from "framer-motion";
+import { motion , useViewportScroll, useTransform } from "framer-motion";
 import { BsArrowDownLeft } from "react-icons/bs";
+
+// style
 const mouse = {
   fly: {
     position: "absolute",
@@ -47,7 +49,8 @@ const Videos = () => {
   const handleMouseMove = (e) => {
     setMousePosition(getRelativeCoordinates(e, boxRef.current));
   };
-
+const {scrollYProgress}=useViewportScroll()
+const opacity = useTransform(scrollYProgress, [0, 1], [0, 1]);
   return (
     <div className="mt-5">
       <motion.div
@@ -86,12 +89,12 @@ const Videos = () => {
                 controls
                 autoPlay
                 muted
-                className="rounded-[30px] border-2 border-gray w-100 h-[40vh] xl:h-[80vh] lg:h-[80vh] md:h-[60vh]  shadow-xl "
+                className="rounded-[30px] border-2 border-gray w-100  shadow-xl "
               >
                 <source
                   src={item.v1}
                   type="video/mp4"
-                  className="h-100 w-100"
+                  className="h-[40vh]"
                 />
               </video>
             </motion.div>
