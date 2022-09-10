@@ -62,9 +62,9 @@ const opacity = useTransform(scrollYProgress, [0, 1], [0, 1]);
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         style={{ ...mouse.fly }}
-        className="flex"
+        className="flex text-[10px] xl:text-sm lg:text-sm md:text-sm"
       >
-        <span className="bg-hover text-white p-2 text-sm rounded-2xl uppercase ">
+        <span className="bg-hover text-white p-2  rounded-2xl uppercase ">
           Show me the work
         </span>
         <span className="bg-hover ml-3 text-white  rounded-full p-3 ">
