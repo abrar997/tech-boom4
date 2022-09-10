@@ -31,8 +31,8 @@ const Card = () => {
     },
   ]);
   return (
-    <div className="flex flex-col xl:flex-row lg:flex-row p-[3rem] justify-between items-center  ">
-      {data.map((item,index) => {
+    <div className="flex flex-col xl:flex-row lg:flex-row md:xl:flex-row p-[3rem] justify-between items-center  ">
+      {data.map((item, index) => {
         return (
           <div key={index} className="border-l-2 border-[gray] p-5 pl-7 ">
             <p className="w-[70%] text-lg leading-10">{item.link}</p>
@@ -48,13 +48,15 @@ const Card = () => {
               <motion.div
                 initial={{ opacity: 1 }}
                 // whileHover={{ opacity: 0 }}
-                animate={{hover:0}}
+                animate={{ hover: 0 }}
                 className="z-0 top-0 absolute"
               >
-                <img src={item.img} className="border rounded-[30px]" />
+                <motion.img src={item.img} className="border rounded-[30px]" />
               </motion.div>
               <div className=" relative z-1">
                 <motion.img
+                  initail={{ opacity: 1 }}
+                  whileHover={{ opacity: 0 }}
                   src={item.img1}
                   className=" border rounded-[30px]"
                 />
