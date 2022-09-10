@@ -31,13 +31,13 @@ const Card = () => {
     },
   ]);
   return (
-    <div className="flex p-[3rem] justify-between items-center  ">
-      {data.map((item) => {
+    <div className="flex flex-col xl:flex-row lg:flex-row p-[3rem] justify-between items-center  ">
+      {data.map((item,index) => {
         return (
-          <div className="border-l-2 border-[gray] p-5 pl-7 ">
+          <div key={index} className="border-l-2 border-[gray] p-5 pl-7 ">
             <p className="w-[70%] text-lg leading-10">{item.link}</p>
             <p className="w-[70%] leading-6 tracking-wide text-lg">
-              {item.text}{" "}
+              {item.text}
             </p>
             <p className="flex items-center  text-xl  mt-4 leading-10">
               <span>{item.icon} </span>
