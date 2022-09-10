@@ -33,16 +33,14 @@ const Card = () => {
 
   return (
     <div
-      className="app__gallery-cards flex flex-col xl:flex-row lg:flex-row md:xl:flex-row p-[1rem] xl:p-[3rem]
+      className="app__gallery-cards flex flex-col xl:flex-row lg:flex-row
+     md:xl:flex-row p-[1rem] xl:p-[3rem]
     lg:[p-2] md-[p-2]
-    justify-between items-center  "
+    justify-around xl:justify-between lg:justify-between md:justify-between items-center  "
     >
       {data.map((item, index) => {
         return (
-          <div
-            key={index}
-            className="border-l-0 xl:border-l-2 border-[gray] p-5 pl-7 "
-          >
+          <div key={index} className="mb-5 border-l-[1px] border-[gray] p-5 pl-7 ">
             <p className="w-[70%] text-sm xl:text-sm mb-6 lg:text-lg md:text-md text-[grey] ">
               {item.link}
             </p>
