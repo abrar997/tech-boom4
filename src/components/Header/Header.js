@@ -1,14 +1,7 @@
 import React from "react";
-import {
-  AnimatePresence,
-  motion,
-useScroll
-} from "framer-motion";
+import { AnimatePresence, motion, useScroll } from "framer-motion";
 import { Videos } from "../../components";
 const Header = () => {
-  // for change with scroll
-  const { scrollY } = useScroll();
-
   // for move text
   const text = ["brand vision", "design culture ", "teaching browss"];
   const [activeIndex, setActiveIndex] = React.useState(0);
