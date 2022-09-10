@@ -30,7 +30,6 @@ const Card = () => {
       img1: images.sweet,
     },
   ]);
-
   return (
     <div
       className="app__gallery-cards flex flex-col xl:flex-row lg:flex-row
@@ -57,7 +56,7 @@ const Card = () => {
               <span className="ml-2">{item.name} </span>
             </p>
 
-            <div className="z-0 relative w-[230px] xl:w-[380px] lg:w-[380px]">
+            <div className="z-0 relative w-[250px] xl:w-[380px] lg:w-[380px]">
               <motion.div
                 initial={{ opacity: 1 }}
                 animate={{ hover: 0 }}

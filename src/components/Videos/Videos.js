@@ -49,9 +49,9 @@ const Videos = () => {
     setMousePosition(getRelativeCoordinates(e, boxRef.current));
   };
   const { scrollYProgress } = useViewportScroll();
-  const opacity = useTransform(scrollYProgress, [0, 1], [0, 1]);
+  // const opacity = useTransform(scrollYProgress/, [0, 1], [0, 1]);
   return (
-    <div className="mt-5  h-[130vh]">
+    <div className="mt-5">
       <motion.div
         animate={{
           x: mousePosition.x,
@@ -79,13 +79,13 @@ const Videos = () => {
           rotateY: mousePosition.centerY * 40,
         }}
       >
-        <motion.div className="video border rounded-[30px]  ">
+        <motion.div className="video border  rounded-[30px] ">
           <video
             preload="auto"
             controls
             autoPlay
             muted
-            className="w-[100%] rounded-[30px] border-1 border-gray shadow-xl h-[30vh] xl:h-[70vh] lg:h-[70vh]   object-cover "
+            className="w-[100%] rounded-[30px] border-1 border-gray shadow-xl h-[50vh] xl:h-[70vh] lg:h-[70vh]   object-cover "
           >
             <source src={videos.header} type="video/mp4" />
           </video>

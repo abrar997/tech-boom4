@@ -25,7 +25,7 @@ const Header = () => {
     };
   }, []);
   return (
-    <motion.div className="bg-main p-[2rem] mt-10">
+    <motion.section className="bg-main p-[2rem] mt-10">
       <motion.div>
         <motion.div
           initial="hidden"
@@ -36,7 +36,8 @@ const Header = () => {
             visible: { opacity: 1, scale: 1 },
             hidden: { opacity: 0, scale: 0 },
           }}
-          className=" uppercase text-center flex flex-col justify-center items-center"
+          className=" uppercase text-center flex flex-col justify-center 
+          items-center"
         >
           <motion.p className=" tracking-widest ">
             poerful websites and brand experience
@@ -68,7 +69,7 @@ const Header = () => {
         </p>
       </motion.div>
       <Videos />
-    </motion.div>
+    </motion.section>
   );
 };
 

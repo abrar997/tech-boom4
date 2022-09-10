@@ -2,7 +2,7 @@ import React from "react";
 import { Card } from "../../components";
 const Gallery = () => {
   return (
-    <div>
+    <section>
       <div
         className="ml-2 border-t-[2px] border-black
         flex flex-col xl:flex-row w-[100%] mt-0 xl:mt-20 
@@ -22,7 +22,7 @@ const Gallery = () => {
         </div>
       </div>
       <Card />
-    </div>
+    </section>
   );
 };
 
