@@ -12,8 +12,9 @@ module.exports = {
         brown:"rgb(31, 3, 3)"
       },
       height: {
-        100: "70vh",
+        100: "100vh",
         60: "60vh",
+        40: "40vh",
 
       },
       width: {
@@ -23,6 +24,7 @@ module.exports = {
 
       fontSize: {
         title: "5rem",
+        gall: "7rem",
       },
       screens: {
         xsm: "445px",

@@ -1,8 +1,7 @@
 import React, { useState, useRef } from "react";
-import { data } from "../../constatns";
-import { motion , useViewportScroll, useTransform } from "framer-motion";
+import { motion, useViewportScroll, useTransform } from "framer-motion";
 import { BsArrowDownLeft } from "react-icons/bs";
-
+import { videos } from "../../constatns";
 // style
 const mouse = {
   fly: {
@@ -49,10 +48,10 @@ const Videos = () => {
   const handleMouseMove = (e) => {
     setMousePosition(getRelativeCoordinates(e, boxRef.current));
   };
-const {scrollYProgress}=useViewportScroll()
-const opacity = useTransform(scrollYProgress, [0, 1], [0, 1]);
+  const { scrollYProgress } = useViewportScroll();
+  const opacity = useTransform(scrollYProgress, [0, 1], [0, 1]);
   return (
-    <div className="mt-5">
+    <div className="mt-5 h-[130vh]">
       <motion.div
         animate={{
           x: mousePosition.x,
@@ -71,35 +70,26 @@ const opacity = useTransform(scrollYProgress, [0, 1], [0, 1]);
           <BsArrowDownLeft />
         </span>
       </motion.div>
-
       <motion.div
         ref={boxRef}
-        style={{ ...mouse.box, perspective: 700 }}
+        // style={{ ...mouse.box, perspective: 700 }}
         onMouseMove={(e) => handleMouseMove(e)}
         animate={{
           rotateX: mousePosition.centerX * 40,
           rotateY: mousePosition.centerY * 40,
         }}
       >
-        {data.data.map((item, index) => {
-          return (
-            <motion.div className="video border rounded-[30px]" key={index}>
-              <video
-                preload="auto"
-                controls
-                autoPlay
-                muted
-                className="rounded-[30px] border-2 border-gray w-100  shadow-xl "
-              >
-                <source
-                  src={item.v1}
-                  type="video/mp4"
-                  className="h-[40vh]"
-                />
-              </video>
-            </motion.div>
-          );
-        })}
+        <motion.div className="video border rounded-[30px] ">
+          <video
+            preload="auto"
+            controls
+            autoPlay
+            muted
+            className="rounded-[30px] border-1 border-gray shadow-xl h-[30vh] xl:h-[70vh] lg:h-[70vh]   object-cover "
+          >
+            <source src={videos.header} type="video/mp4" />
+          </video>
+        </motion.div>
       </motion.div>
     </div>
   );

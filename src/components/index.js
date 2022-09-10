@@ -1,3 +1,5 @@
 export {default as Header} from './Header/Header'
 export {default as Videos} from './Videos/Videos'
 export {default as Mouse} from './Mouse/Mouse'
+export {default as Gallery} from './Gallery/Gallery'
+export {default as Card} from './Card/Card'

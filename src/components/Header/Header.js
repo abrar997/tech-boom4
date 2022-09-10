@@ -25,7 +25,7 @@ const Header = () => {
     };
   }, []);
   return (
-    <motion.div className="h-100 bg-main p-[2rem] mt-10">
+    <motion.div className="bg-main p-[2rem] mt-10">
       <motion.div>
         <motion.div
           initial="hidden"
