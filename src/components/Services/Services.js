@@ -7,15 +7,17 @@ const Services = () => {
   return (
     <div
       className="app__home-services grid grid-cols-1 xl:grid-cols-2 gap-10 p-[2rem]
-    border-t-2  border-black "
+    border-t-2  border-black pb-[2rem] "
     >
       <motion.div className="images row-span-4  rounded-[30px]">
         <img src={images.service} className="rounded-[30px] h-[90%]" />
       </motion.div>
 
-      <motion.div className=" app__home-services-text  h-[900px]  flex flex-col  justify-between">
+      <motion.div className=" app__home-services-text  h-[900px] 
+       flex flex-col  justify-between">
         <h1
-          className="font-head text-[4rem] lg:text-[6rem] xl:text-[8rem] flex flex-col xl:flex-row lg:xl:flex-row md:xl:flex-row justify-around 
+          className="font-head text-[4rem] lg:text-[6rem] 
+          xl:text-[8rem] flex flex-col xl:flex-row lg:xl:flex-row md:xl:flex-row justify-around 
          xl:justify-between 
         uppercase"
         >
@@ -27,26 +29,28 @@ const Services = () => {
           </span>
           services
         </h1>
-        <p className="flex xl:justify-end  uppercase text-[10px] ">
+        <p className="flex xl:justify-end mt-4  uppercase text-[10px] ">
           *** we get what you want,
           <br /> strategize what you need , and <br />
           deliver with impact , no lip
           <br /> services , just full services
         </p>
 
-        <div className=" grid grid-cols-1 xl:grid-cols-2 gap-1  xl:gap-5 lg:gap-5 md:gap-3 mt-[10px] xl:w-auto">
+        <div className=" grid grid-cols-1 xl:grid-cols-2 gap-1
+          xl:gap-5 lg:gap-5 md:gap-3 mt-[10px]">
           {data.services.map((item, index) => {
             return (
               <div
                 key={index}
-                className="flex flex-col  justify-start xl:justify-between items-start mt-10
+                className="flex flex-col  justify-start xl:justify-between items-start 
                 "
               >
                 <p className=" leading-10 text-[gray] xl:mt-5">{item.count} </p>
-                <h1 className="xl:leading-[4rem] lg:leading-[3rem] md:leading-[2rem] capitalize font-bold text-lg xl:text-3xl">
+                <h1 className="xl:leading-[4rem] lg:leading-[3rem]  first-letter:
+                md:leading-[2rem] capitalize font-bold text-lg xl:text-3xl md:text-xl">
                   {item.name}
                 </h1>
-                <p className=" xl:font-semibold text-[8px] xl:text-[12px] mt-5">
+                <p className=" xl:font-semibold text-[8px] xl:text-[12px] md:text-xl mt-5">
                   {" "}
                   {item.text}
                 </p>

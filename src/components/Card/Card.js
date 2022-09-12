@@ -36,7 +36,8 @@ const Card = () => {
       className="app__gallery-cards flex flex-col xl:flex-row lg:flex-row
      md:xl:flex-row p-[1rem] xl:p-[3rem]
     lg:[p-2] md-[p-2]
-    justify-around xl:justify-between lg:justify-between md:justify-between items-center  "
+    justify-around xl:justify-between lg:justify-between md:justify-between
+     xl:items-center  "
     >
       {data.map((item, index) => {
         return (
@@ -57,7 +58,7 @@ const Card = () => {
               <span className="ml-2">{item.name} </span>
             </p>
 
-            <div className="z-0 relative w-[250px] xl:w-[380px] lg:w-[380px]">
+            <div className="z-0 relative w-[250px] xl:w-[380px] lg:w-[380px] md:w-[340px]">
               <motion.div
                 initial={{ opacity: 1 }}
                 animate={{ hover: 0 }}

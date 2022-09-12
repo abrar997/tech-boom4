@@ -7,6 +7,7 @@ const Gallery = () => {
       <div
         className="ml-2 border-t-[2px] border-black
         flex flex-col xl:flex-row w-[100%] mt-[60px] xl:mt-[310px] sm:mt-[500px]
+        md:-mt-[100px]
         justify-between items-start xl:items-center lg:items-center 
         uppercase
         "
@@ -26,7 +27,7 @@ const Gallery = () => {
         <Card />
       </div>
 
-      <div>
+      <div className="flex items-start xl:items-center xl:justify-center lg:items-center lg:justify-center ">
         <Buttons title="View all work" icon={<icons.BsArrowDownLeft/>} />
       </div>
     </section>

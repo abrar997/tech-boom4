@@ -8,7 +8,7 @@ const Clients = () => {
        border-t-2 border-black"
     >
       <div className="app__home-header">
-        <p className=" uppercase text-center font-semibold">
+        <p className=" uppercase text-center m-auto font-semibold">
           ourclients bring the party . here are some on the vip list .
         </p>
       </div>
@@ -23,7 +23,7 @@ const Clients = () => {
             <div key={index}>
               <img
                 src={item.img}
-                className=" w-[200px] xl:w-[40%] lg:w-[40%]"
+                className=" w-[200px]  xl:w-[40%] lg:w-[40%] md:w-[40%]"
               />
             </div>
           );
