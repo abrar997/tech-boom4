@@ -53,7 +53,10 @@ const Header = () => {
           </AnimatePresence>
         </motion.div>
       </motion.div>
-      <motion.div className=" text-[12px] mt-5 flex justify-between items-start tracking-wide  uppercase text-left">
+      <motion.div
+        className=" text-[10px] 
+      mt-5 flex justify-between items-start tracking-wide  uppercase text-left"
+      >
         <p>
           our work <br /> centers on resluts
         </p>
@@ -66,7 +69,12 @@ const Header = () => {
       </div>
 
       <div>
-        <p className=" font-semibold pt-[33px] uppercase leading-15 tracking-wider text-center">
+        <p
+          className=" font-semibold pt-[10px] 
+         text-[10px]
+          xl:text-sm
+          xl:pt-[33px] uppercase leading-15 tracking-wider text-center"
+        >
           the agency your mama warned you about ,
           <br />
           here to steal your heart and sweep you off your feet .

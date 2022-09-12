@@ -7,8 +7,12 @@
 body {
   background-color: #eee;
   overflow-x: hidden;
+
 }
 
 video::-webkit-media-controls {
   display: none;
 }
+
+
+

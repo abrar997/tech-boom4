@@ -6,7 +6,7 @@ const Gallery = () => {
     <section>
       <div
         className="ml-2 border-t-[2px] border-black
-        flex flex-col xl:flex-row w-[100%] mt-0 xl:mt-[310px] 
+        flex flex-col xl:flex-row w-[100%] mt-[60px] xl:mt-[310px] sm:mt-[500px]
         justify-between items-start xl:items-center lg:items-center 
         uppercase
         "

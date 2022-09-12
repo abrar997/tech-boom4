@@ -1,6 +1,6 @@
 import React from "react";
 import { data } from "../../constatns";
-import {motion} from 'framer-motion'
+import { motion } from "framer-motion";
 const Clients = () => {
   return (
     <div
@@ -13,7 +13,7 @@ const Clients = () => {
         </p>
       </div>
       <div
-        className=" grid grid-rows-3  gap-5 grid-cols-4  mt-10
+        className=" grid grid-rows-3  gap-10 xl:gap-5 lg:gap-5 md:gap:7 grid-cols-2 xl:grid-cols-5  mt-10
         p-[4rem]
       
       "
@@ -21,7 +21,10 @@ const Clients = () => {
         {data.client.map((item, index) => {
           return (
             <div key={index}>
-              <img src={item.img} width="40%" />
+              <img
+                src={item.img}
+                className=" w-[200px] xl:w-[40%] lg:w-[40%]"
+              />
             </div>
           );
         })}
