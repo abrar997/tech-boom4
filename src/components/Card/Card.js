@@ -1,5 +1,5 @@
 import React from "react";
-import { GiSplitCross } from "react-icons/gi";
+import { icons } from "../../constatns";
 import { images } from "../../constatns";
 import { motion } from "framer-motion";
 
@@ -8,7 +8,7 @@ const Card = () => {
     {
       link: "P/11",
       text: "platforming our innovation and advancing the future of web design  ",
-      icon: <GiSplitCross />,
+      icon: <icons.GiSplitCross />,
       name: "Webflow",
       img: images.b1,
       img1: images.blue,
@@ -16,7 +16,7 @@ const Card = () => {
     {
       link: "P/102",
       text: "platforming our innovation and advancing the future of web design  ",
-      icon: <GiSplitCross />,
+      icon: <icons.GiSplitCross />,
       name: "Webflow",
       img: images.home2,
       img1: images.h2,
@@ -24,12 +24,13 @@ const Card = () => {
     {
       link: "P/103",
       text: "platforming our innovation and advancing the future of web design  ",
-      icon: <GiSplitCross />,
+      icon: <icons.GiSplitCross />,
       name: "Webflow",
       img: images.web,
       img1: images.sweet,
     },
   ]);
+
   return (
     <div
       className="app__gallery-cards flex flex-col xl:flex-row lg:flex-row

@@ -18,7 +18,7 @@ const Header = () => {
     };
   }, []);
   return (
-    <motion.section className="bg-main p-[2rem] mt-10">
+    <motion.section className="bg-main p-[2rem]  mt-10 ">
       <motion.div>
         <motion.div
           initial="hidden"
@@ -61,7 +61,17 @@ const Header = () => {
           Our style <br /> Stays lad back
         </p>
       </motion.div>
-      <Videos />
+      <div>
+        <Videos />
+      </div>
+
+      <div>
+        <p className=" font-semibold pt-[33px] uppercase leading-15 tracking-wider text-center">
+          the agency your mama warned you about ,
+          <br />
+          here to steal your heart and sweep you off your feet .
+        </p>
+      </div>
     </motion.section>
   );
 };

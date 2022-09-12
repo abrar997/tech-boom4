@@ -1,11 +1,11 @@
 import React from "react";
-import { Card } from "../../components";
+import { Card ,Buttons} from "../../components";
 const Gallery = () => {
   return (
     <section>
       <div
         className="ml-2 border-t-[2px] border-black
-        flex flex-col xl:flex-row w-[100%] mt-0 xl:mt-20 
+        flex flex-col xl:flex-row w-[100%] mt-0 xl:mt-[310px] 
         justify-between items-start xl:items-center lg:items-center p-[2rem] 
         uppercase
         "
@@ -21,7 +21,13 @@ const Gallery = () => {
           case studies
         </div>
       </div>
-      <Card />
+      <div>
+        <Card />
+      </div>
+
+      <div> 
+        <Buttons/>
+      </div>
     </section>
   );
 };

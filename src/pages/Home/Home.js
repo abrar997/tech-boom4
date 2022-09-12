@@ -1,5 +1,5 @@
 import React from "react";
-import { Header, Gallery } from "../../components";
+import { Header, Gallery, Clients } from "../../components";
 import { motion } from "framer-motion";
 const Home = () => {
   return (
@@ -8,6 +8,7 @@ const Home = () => {
       <Header />
       </div>
       <Gallery />
+      <Clients />
     </motion.div>
   );
 };
