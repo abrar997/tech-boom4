@@ -7,8 +7,9 @@ const Services = () => {
   return (
     <div
       className="app__home-services grid grid-cols-1 xl:grid-cols-2 gap-10 p-[2rem]
-    border-t-2  border-black pb-[2rem] "
-    >
+    border-t-2  border-black pb-[2rem]  "
+
+>
       <motion.div className="images row-span-4  rounded-[30px]">
         <img src={images.service} className="rounded-[30px] h-[90%]" />
       </motion.div>
@@ -59,7 +60,7 @@ const Services = () => {
           })}
         </div>
 
-        <div className="flex  mt-10 w-screen   ">
+        <div className="flex  mt-10 w-screen    ">
           <Buttons
             title="jsut show me a list of services"
             icon={<icons.AiOutlinePlus />}
