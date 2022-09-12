@@ -23,7 +23,7 @@ const Clients = () => {
             <div key={index} className="flex items-center justify-center">
               <img
                 src={item.img}
-                className=" w-[50px]  xl:w-[40%] lg:w-[40%] md:w-[40%]"
+                className=" w-[80px]  xl:w-[40%] lg:w-[40%] md:w-[40%]"
               />
             </div>
           );
