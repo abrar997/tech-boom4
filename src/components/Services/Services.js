@@ -7,10 +7,10 @@ const Services = () => {
   return (
     <div
       className="app__home-services grid grid-cols-1 xl:grid-cols-2 gap-10 p-[2rem]
-    border-t-2  border-black pb-[2rem]  "
+    border-t-2  border-black pb-[2rem] "
 
 >
-      <motion.div className="images row-span-4  rounded-[30px]">
+      <motion.div>
         <img src={images.service} className="rounded-[30px] h-[90%]" />
       </motion.div>
 
@@ -37,7 +37,7 @@ const Services = () => {
           <br /> services , just full services
         </p>
 
-        <div className=" grid grid-cols-1 xl:grid-cols-2 gap-1
+        <div className=" grid  xl:grid-cols-2 
           xl:gap-5 lg:gap-5 md:gap-3 mt-[10px]">
           {data.services.map((item, index) => {
             return (
@@ -60,7 +60,7 @@ const Services = () => {
           })}
         </div>
 
-        <div className="flex  mt-10 w-screen    ">
+        <div className="flex  mt-10  w-[96%] items-start justify-start">
           <Buttons
             title="jsut show me a list of services"
             icon={<icons.AiOutlinePlus />}
