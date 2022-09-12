@@ -1,12 +1,13 @@
 import React from "react";
-import { Card ,Buttons} from "../../components";
+import { Card, Buttons } from "../../components";
+import { icons } from "../../constatns";
 const Gallery = () => {
   return (
     <section>
       <div
         className="ml-2 border-t-[2px] border-black
         flex flex-col xl:flex-row w-[100%] mt-0 xl:mt-[310px] 
-        justify-between items-start xl:items-center lg:items-center p-[2rem] 
+        justify-between items-start xl:items-center lg:items-center 
         uppercase
         "
       >
@@ -25,8 +26,8 @@ const Gallery = () => {
         <Card />
       </div>
 
-      <div> 
-        <Buttons/>
+      <div>
+        <Buttons title="View all work" icon={<icons.BsArrowDownLeft/>} />
       </div>
     </section>
   );

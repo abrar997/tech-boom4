@@ -4,6 +4,7 @@ import web from "./images/webs.png";
 import b1 from "./images/b11.jpg";
 import home2 from "./images/decore.jpg";
 import h2 from "./images/22.jpg";
+// clients
 import l1 from "./images/c1.svg";
 import l2 from "./images/c2.svg";
 import l3 from "./images/c3.svg";
@@ -17,6 +18,8 @@ import l10 from "./images/c10.svg";
 import l11 from "./images/c12.png";
 import l12 from "./images/c15.svg";
 import l13 from "./images/c13.svg";
+// --------------
+import service from "./images/serv.jpg";
 
 export default {
   blue,
@@ -38,4 +41,5 @@ export default {
   l11,
   l12,
   l13,
+  service,
 };

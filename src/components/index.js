@@ -1,7 +1,7 @@
 export {default as Header} from './Header/Header'
 export {default as Videos} from './Videos/Videos'
-export {default as Mouse} from './Mouse/Mouse'
 export {default as Gallery} from './Gallery/Gallery'
 export {default as Card} from './Card/Card'
 export {default as Buttons} from './Buttons/Buttons'
 export {default as Clients} from './Clients/Clients'
+export {default as Services} from './Services/Services'
